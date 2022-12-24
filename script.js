@@ -166,15 +166,21 @@
 // }
 
 // ***************************************************************
-
-let img1=document.images[0]
-let img2=document.images[1]
-let img3=document.images[2]
-let img4=document.images[3]
-let imgMain=document.images[4]
+let btn=document.getElementById('btn')
 
 
-img1.onclick=()=>imgMain.src=img1.src
-img2.onclick=()=>imgMain.src=img2.src
-img3.onclick=()=>imgMain.src=img3.src
-img4.onclick=()=>imgMain.src=img4.src
+onscroll=function(){
+if (scrollY>=800){
+    btn.classList.remove('hide')
+}else {
+    btn.classList.add('hide')
+}
+
+}
+btn.onclick=function(){
+ scroll({
+    left:0,
+    top:100,
+    behavior:"smooth"
+})
+}

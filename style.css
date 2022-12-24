@@ -1,18 +1,23 @@
-.photos img{
-    width: 200px;
-    height: 200px;
-    border: 5ps solid #aaa;
+body{
+    height: 6000px;
+    width: 2000px;
+    background: #444;
 }
-
-.photos img:hover{
+#btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: #fa0;
     cursor: pointer;
-    border:5px solid #080 ;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
+.hide{
+    display: none;
 
-.main{
-    width: 450px;
-    height: 450px;
-    border: 5px solid #aaa;
-    display: flex;
-    justify-content: center;
+}
+h1{
+    color: aliceblue;
+    align-items: center;
 }
