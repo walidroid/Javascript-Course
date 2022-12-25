@@ -166,21 +166,39 @@
 // }
 
 // ***************************************************************
-let btn=document.getElementById('btn')
+// let btn=document.getElementById('btn')
 
 
-onscroll=function(){
-if (scrollY>=800){
-    btn.classList.remove('hide')
-}else {
-    btn.classList.add('hide')
+// onscroll=function(){
+// if (scrollY>=800){
+//     btn.classList.remove('hide')
+// }else {
+//     btn.classList.add('hide')
+// }
+
+// }
+// btn.onclick=function(){
+//  scroll({
+//     left:0,
+//     top:100,
+//     behavior:"smooth"
+// })
+// }
+// let i=0
+// let hello=setInterval(function () {
+//     console.log((i++));
+//     if (i==4) {
+//         clearInterval(hello)
+//     }
+// },1000)
+
+
+
+let txt=document.getElementById('txt')
+
+txt.onkeyup=function(){
+    sessionStorage.txt=txt.value
 }
-
-}
-btn.onclick=function(){
- scroll({
-    left:0,
-    top:100,
-    behavior:"smooth"
-})
+if (sessionStorage.length>0){
+    txt.value=sessionStorage.txt
 }
